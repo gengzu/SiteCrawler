@@ -2,7 +2,7 @@
 
 @echo Start Web Server
 
-start dnx -p src/Crawler.Web run
+start dnx -p src/Crawler.Web web
 
 @echo Start Service 1
 
