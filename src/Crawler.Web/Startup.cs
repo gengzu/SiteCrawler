@@ -16,9 +16,8 @@ namespace Crawler.Web
         
         public void Configure(IApplicationBuilder app)
         {
-            app.Run(async (context) => {                
-                await context.Response.WriteAsync("Hello from web");
-            });
+            app.UseDefaultFiles(); // to get index.html by default
+            app.UseStaticFiles();
         }
     }
 }
